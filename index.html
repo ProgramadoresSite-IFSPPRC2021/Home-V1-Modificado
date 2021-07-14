@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home - Site</title>
+  <link rel="stylesheet" href="TestNav/navtest.css">
+  <link rel="stylesheet" href="Carousel/cstyle.css">
+  <link rel="stylesheet" href="Homesite/style-tema.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <header>
+
+      <!--NAVBAR-->
+
+    <div class="wrapper">
+        <nav>
+          <input type="checkbox" id="show-search">
+          <input type="checkbox" id="show-menu">
+          <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+          <div class="content">
+          <div class="logo"><a href="#">FakeIsFake</a></div>
+            <ul class="links">
+              <li><a href="#">Início</a></li>
+              <li><a href="#">Colaboradores</a></li>
+              <li>
+                <a href="#" class="desktop-link">Temas</a>
+                <input type="checkbox" id="show-features">
+                <label for="show-features">Temas</label>
+                <ul>
+                  <li><a href="#">Economia</a></li>
+                  <li><a href="#">Saúde</a></li>
+                  <li><a href="#">Meio Ambiente</a></li>
+                  <li><a href="#">Política</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Memes</a></li>
+            </ul>
+          </div>
+          <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+          <form action="#" class="search-box">
+            <input type="text" placeholder="Type Something to Search..." required>
+            <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+          </form>
+        </nav>
+      </div>
+
+
+      <!--NAVBAR FIM-->
+
+    </header>
+
+
+    <!--CARROSSEL-->
+    <section class="slider">
+        <div class="slides">
+            <!-- Botão radio inicio -->
+            <input type="radio" name="radio-btn" id="r1">
+            <input type="radio" name="radio-btn" id="r2">
+            <input type="radio" name="radio-btn" id="r3">
+            <input type="radio" name="radio-btn" id="r4">
+            <input type="radio" name="radio-btn" id="r5">
+            <!-- Botão Radio fim -->
+            <!-- Começo imagens -->
+            <div class="slide um">
+                <img src="https://cdn.wallpapersafari.com/36/17/kR3zxF.jpg">
+            </div>
+            <div class="slide dois">
+                <img src="https://wallpapercave.com/wp/xwnHKVZ.jpg">
+            </div>
+            <div class="slide tres">
+                <img
+                    src="https://uhdwallpapers.org/uploads/converted/20/01/14/the-mandalorian-5k-1600x900_477555-mm-90.jpg">
+            </div>
+            <div class="slide quatro">
+                <img src="https://images.hdqwalls.com/download/vaporwave-zl-1600x900.jpg">
+            </div>
+            <div class="slide cinco">
+                <img src="https://images7.alphacoders.com/909/909337.jpg">
+            </div>
+            <!-- Fim imagens -->
+            <!-- Começo Automatico -->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+                <div class="auto-btn5"></div>
+            </div>
+            <!-- Fim automatico -->
+        </div>
+        <!-- Começo Manual -->
+        <div class="navigation-manual">
+            <label for="r1" class="manual-btn"></label>
+            <label for="r2" class="manual-btn"></label>
+            <label for="r3" class="manual-btn"></label>
+            <label for="r4" class="manual-btn"></label>
+            <label for="r5" class="manual-btn"></label>
+        </div>
+  </section>
+    <!--CARROSSEL FIM-->
+
+    <!--TEMAS-->
+    
+    <section class="conteiner2">
+      <h2>TEMAS</h2>
+      <div class="card">
+        <a href="#"><img src="Homesite/tema.jpg"></a>
+        <h3>Tema</h3>
+      </div>
+      <div class="card">
+        <a href="#"><img src="Homesite/tema.jpg"></a>
+        <h3>Tema</h3>
+      </div>
+      <div class="card">
+          <a href="#"><img src="Homesite/tema.jpg"></a>
+          <h3>Tema</h3>
+      </div>
+      <div class="card">
+          <a href="#"><img src="Homesite/tema.jpg"></a>
+          <h3>Tema</h3>
+      </div>
+    </section>
+
+      <!-- Tema com imagem que contém texto dentro
+        
+        <section class="conteiner2">
+      <h2>TEMAS</h2>
+      <div class="card">
+        <a href="#"><img src="Homesite/tematxt.jpg"></a>
+      </div>
+      <div class="card">
+        <a href="#"><img src="Homesite/tematxt.jpg"></a>
+      </div>
+      <div class="card">
+          <a href="#"><img src="Homesite/tematxt.jpg"></a>
+      </div>
+      <div class="card">
+          <a href="#"><img src="Homesite/tematxt.jpg"></a>
+      </div>
+    </section>
+  
+        -->
+
+    <!--TEMAS FIM-->
+
+    <script type="text/javascript">
+        var contador = 1;
+        setInterval(function () {
+            document.getElementById('r' + contador).checked = true;
+            contador++;
+            if (contador > 5) {
+                contador = 1;
+            }
+            if(contador < 1){
+                contador= 5;
+            }
+            
+        }, 5000);
+    </script>
+
+</body>
+</html>
